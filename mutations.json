@@ -1,0 +1,1 @@
+{"index.js":"function mutation(arr) {\n\tconst splitted = arr.map(str => str.toLowerCase().split(''))\n  const str1 = splitted[0]\n  const str2 = splitted[1]\n  \n  const result = []\n  \n  for(let i = 0; i < str2.length; i++) {\n  \tresult.push(str1.includes(str2[i]))\n  }\n  \n  return result.every(value =>  value === true)\n}\n\nmutation([\"hello\", \"hey\"]);"}
