@@ -1,0 +1,1 @@
+{"index.js":"function sumAll(arr) {\n  const sortedArr = arr.sort((a, b) => a - b)\n  const startCount = Number(sortedArr.slice(0, 1)) + 1 \n  const endCount = sortedArr.slice(1)\n  const rangeNum = []\n  for (let i = startCount; i < endCount; i++) {\n   rangeNum.push(i)\n  } \n  return  [...sortedArr, ...rangeNum].reduce((acc, val) => acc + val)\n}\n\n\nsumAll([1, 4]);"}
