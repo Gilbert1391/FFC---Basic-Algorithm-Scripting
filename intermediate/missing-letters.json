@@ -1,0 +1,1 @@
+{"index.js":"function fearNotLetter(str) {\n  const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');\n  const letters = str.split('')\n  let i = alphabet.indexOf(letters[0])\n  \n  for(i; i < alphabet.length; i++) {\n    if (letters.includes(alphabet[i]) === false) {\n      return alphabet[i]\n     } \n   } \n}\n\nfearNotLetter(\"abce\");"}
