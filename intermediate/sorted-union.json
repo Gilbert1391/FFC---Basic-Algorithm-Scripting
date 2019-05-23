@@ -1,0 +1,1 @@
+{"index.js":"function uniteUnique(arr) {\n\tconst uniqueVals = [];\n  \n  for(let i = 0; i < arguments.length; i++) {\n    arguments[i].map(a => {\n    \tif(!uniqueVals.includes(a)) {\n      \tuniqueVals.push(a)\n      }\n    })\n  }\n  return uniqueVals;\n}\n\nuniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);"}
